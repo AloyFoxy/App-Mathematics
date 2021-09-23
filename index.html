@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!---------GOOGLE FONTS IMPORT MONTSERRAT FONT---------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Proyecto Lamina</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title_main">Proyecto Lamina</h1>
+        <div class="container_operation">
+            <h2 class="title_operation">Ingrese dos números para hacer operaciones matemáticas</h2>
+            <input class="input_one" placeholder="Seleccione un valor" type="text" id="a">
+            <input class="input_two" placeholder="Seleccione un valor" type="text" id="b">
+            <div class="select_container">
+                <p class="select_container_text">Selecciona la operacion matematica a realizar</p>
+                <div class="select_container_image"></div>
+                <select id="operation" onchange="getValue()">
+                    <option value="suma">Suma</option>
+                    <option value="resta">Resta</option>
+                    <option value="multiplicacion">Multiplicacion</option>
+                    <option value="division">Division</option>
+                </select>
+            </div>    
+            <button class="button_submit" onclick="operation()">Enviar</button>
+            <div class="show_result_container">
+                <p class="title_results">Resultados:</p>
+                <span id="show_result"></span>
+            </div>
+        </div>
+
+<!--         
+        <p class="small">Small</p>
+        <p class="medium">Medium</p>
+        <p class="large">Largue</p> -->
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
